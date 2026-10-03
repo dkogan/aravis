@@ -4,8 +4,8 @@
  * SPDX-License-Identifier: Apache-2.0 OR GPL-3.0-or-later
  */
 
-@import url("solarized-light.css") (prefers-color-scheme: light);
-@import url("solarized-dark.css") (prefers-color-scheme: dark);
+@import url("contrastized-light.css") (prefers-color-scheme: light);
+@import url("contrastized-dark.css") (prefers-color-scheme: dark);
 
 @import url("fonts.css");
 
@@ -427,8 +427,8 @@ footer {
   color-scheme: dark;
 }
 
-.sidebar a,
-.sidebar a:hover {
+.sidebar .links a,
+.sidebar .links a:hover {
   text-decoration: none;
 }
 
@@ -487,7 +487,7 @@ footer {
   margin-bottom: 1rem;
 }
 
-.sidebar .section a {
+.sidebar .links a {
   display: block;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -498,7 +498,7 @@ footer {
   margin-bottom: 0.15rem;
 }
 
-.sidebar .section a:hover {
+.sidebar .links a:hover {
   background-color: var(--sidebar-hover-bg);
   color: var(--sidebar-text-color);
 }
